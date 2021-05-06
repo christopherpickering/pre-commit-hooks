@@ -12,8 +12,6 @@ repos:
     rev: <VERSION> # Get the latest from: https://github.com/christopherpickering/pre-commit-poetry-to-requirements/releases
     hooks:
       - id: poetry-to-requirements
-        language: system
-        always_run: true
         args: [--dev,--output=subfolder/requirements.txt]
 
 ```
@@ -22,4 +20,3 @@ repos:
 
  -  --dev: include dev requirements. Default= False
  -  --output=folder/requirements.txt: output file name. Default= requirements.txt
- 
