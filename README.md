@@ -1,6 +1,6 @@
 # Pre-commit hook Poetry to Pip requirements
 
-This pre-commit hook can be used to generate a `requirements` file for pip from Poetry's dependency list.
+This pre-commit hook can be used to generate a (`requirements`)[https://pip.pypa.io/en/stable/user_guide/#requirements-files] file for pip from Poetry's dependency list.
 
 ## General Usage
 
