@@ -1,3 +1,0 @@
-[console_scripts]
-poetry-to-requirements = poetry_to_requirements:main
-
