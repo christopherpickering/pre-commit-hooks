@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: poetry-to-requirements
+Version: 0.0.1
+Summary: Pre-commit hook to convert Poetry dependancies to pip requirements.txt.
+Home-page: https://github.com/christopherpickering/pre-commit-poetry-to-requirements
+Author: Christopher Pickering
+Author-email: christopher.pickering@keemail.me
+License: MIT
+Description: # Pre-commit hook Poetry to Pip requirements
+        
+        This pre-commit hook can be used to generate a `requirements` file for pip from Poetry's dependency list.
+        
+        ## General Usage
+        
+        In each of your repos, add a file called .pre-commit-config.yaml with the following contents:
+        
+        ```yaml
+        repos:
+          - repo: https://github.com/christopherpickering/pre-commit-poetry-to-requirements
+            rev: <VERSION> # Get the latest from: https://github.com/christopherpickering/pre-commit-poetry-to-requirements/releases
+            hooks:
+              - id: poetry-to-requirements
+                language: system
+                always_run: true
+                args: [--dev,--output=subfolder/requirements.txt]
+        
+        ```
+        
+        ## Arguments
+        
+         -  --dev: include dev requirements. Default= False
+         -  --output=folder/requirements.txt: output file name. Default= requirements.txt
+         
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown

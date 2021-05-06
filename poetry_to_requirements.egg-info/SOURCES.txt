@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+poetry_to_requirements.egg-info/PKG-INFO
+poetry_to_requirements.egg-info/SOURCES.txt
+poetry_to_requirements.egg-info/dependency_links.txt
+poetry_to_requirements.egg-info/entry_points.txt
+poetry_to_requirements.egg-info/top_level.txt
