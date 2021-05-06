@@ -1,6 +1,6 @@
 - id: poetry-to-requirements
   name: Poetry to pip requirements
   description: Convert Poetry dependencies to pip requirements file
-  entry: python poetry_to_requirements.py
-  language: system
+  entry: poetry-to-requirements
+  language: python
   always_run: true
