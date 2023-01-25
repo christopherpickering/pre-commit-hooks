@@ -21,4 +21,5 @@ repos:
 ### Arguments
 
  -  --dev: include dev requirements. Default= False
- -  --output=folder/requirements.txt: output file name. Default= requirements.txt
+ -  --output=folder/requirements.txt: output file name. Default= requirements.txt. This path should be relative to the --input path.
+ -  (optional) --input=path/to/project_root: path to the project root. Default= .

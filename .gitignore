@@ -2,3 +2,8 @@ build
 dist
 .DS_STORE
 *.egg-info
+.tox
+__pycache__
+.coverage
+coverage.xml
+.mypy_cache

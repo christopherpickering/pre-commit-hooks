@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "poetry-to-requirements"
+version = "0.0.6"
+description = "Pre-commit hook to convert Poetry dependancies to pip requirements.txt."
+authors = ["Christopher Pickering <christopher@going.bg>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pre_commit_hooks"}]
+repository = "https://github.com/christopherpickering/pre-commit-hooks.git"
+classifiers=[
+        "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: PyPy"
+    ]
+# packages = [
+#     { include = "poetry_to_requirements", from = "pre_commit_hooks" },
+# ]
+[tool.poetry.scripts]
+poetry-to-requirements = "pre_commit_hooks.poetry_to_requirements:main"
+
+[tool.poetry.dependencies]
+python = "^3.7.2"
+
+
+[tool.poetry.group.dev.dependencies]
+tox = "^4.3.5"
+isort = "^5.11.4"
+black = "^22.12.0"
+pylint = "^2.15.10"
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+
+
+[tool.black]
+max_line_length = 99
+quiet = true
+
+[tool.isort]
+profile = "black"
+quiet = true
+
+[tool.pylint.messages_control]
+disable = "R1722,W1510"
