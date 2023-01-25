@@ -1,6 +1,6 @@
 {
   "name": "poetry-to-requirements",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "private": true,
   "description": "Pre-commit hook to convert Poetry dependancies to pip requirements.txt.",
   "scripts": {
