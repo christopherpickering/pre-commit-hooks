@@ -9,8 +9,8 @@ repos:
   - id: trailing-whitespace
   - id: end-of-file-fixer
   - id: check-yaml
-- repo: https://github.com/myint/autoflake
-  rev: v2.0.0
+- repo: https://github.com/PyCQA/autoflake
+  rev: v2.0.1
   hooks:
   - id: autoflake
     exclude: &fixtures test/
@@ -26,13 +26,13 @@ repos:
   - id: pyupgrade
     args: [--py36-plus]
 - repo: https://github.com/PyCQA/isort
-  rev: 5.11.4
+  rev: 5.12.0
   hooks:
   - id: isort
     exclude: docs*
     additional_dependencies: [toml]
 - repo: https://github.com/psf/black
-  rev: 22.12.0
+  rev: 23.1.0
   hooks:
   - id: black
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
