@@ -31,7 +31,7 @@ tox = "^4.3.5"
 isort = "^5.11.4"
 black = "^23.0.0"
 pylint = "^2.15.10"
-mypy = "^0.991"
+mypy = "^1.0"
 coverage = "^7.1.0"
 
 [build-system]
