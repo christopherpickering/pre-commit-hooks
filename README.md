@@ -1,8 +1,14 @@
 # Pre-commit hooks
 
+[![codecov](https://codecov.io/gh/christopherpickering/pre-commit-hooks/branch/master/graph/badge.svg?token=TY1AWZZ2JB)](https://codecov.io/gh/christopherpickering/pre-commit-hooks)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/christopherpickering/pre-commit-hooks/master.svg)](https://results.pre-commit.ci/latest/github/christopherpickering/pre-commit-hooks/master)
+[![test](https://github.com/christopherpickering/pre-commit-hooks/actions/workflows/test.yaml/badge.svg)](https://github.com/christopherpickering/pre-commit-hooks/actions/workflows/test.yaml)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/poetry-to-requirements)
+![PyPI](https://img.shields.io/pypi/v/poetry-to-requirements)
+
 ## Poetry to Pip requirements
 
-This pre-commit hook can be used to generate a (`requirements`)[https://pip.pypa.io/en/stable/user_guide/#requirements-files] file for pip from Poetry's dependency list.
+This pre-commit hook can be used to generate a [requirements](https://pip.pypa.io/en/stable/user_guide/#requirements-files) file for pip from Poetry's dependency list.
 
 ### General Usage
 
