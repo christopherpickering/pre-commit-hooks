@@ -18,10 +18,10 @@ def check_old_requirements(
             check_cmd.append("--dev")
 
         return (
-            requirements_path.read_text(encoding="utf8")
-            != subprocess.run(
-                check_cmd, capture_output=True, cwd=project_root
-            ).stdout.decode()
+            requirements_path.read_text(encoding="utf8").splitlines()
+            != subprocess.run(check_cmd, capture_output=True, cwd=project_root)
+            .stdout.decode()
+            .splitlines()
         )
 
     return True
@@ -75,6 +75,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     retcode = 0
     if check_old_requirements(args.output, args.dev, args.input):
+        print("rebuilding")
         build_new_requirements(args.output, args.dev, args.input)
 
         print(f"created new {args.output} file")
