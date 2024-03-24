@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetry-to-requirements"
-version = "1.0.1"
+version = "1.0.2"
 description = "Pre-commit hook to convert Poetry dependancies to pip requirements.txt."
 authors = ["Christopher Pickering <christopher@going.bg>"]
 license = "MIT"
@@ -30,7 +30,7 @@ python = "^3.7.2"
 tox = "^4.3.5"
 isort = "^5.11.4"
 black = "^23.0.0"
-pylint = "^2.15.10"
+pylint = "^3.0.0"
 mypy = "^1.0"
 coverage = "^7.1.0"
 
