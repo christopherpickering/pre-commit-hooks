@@ -1,6 +1,6 @@
 {
   "name": "poetry-to-requirements",
-  "version": "1.0.47",
+  "version": "1.0.48",
   "private": true,
   "description": "Pre-commit hook to convert Poetry dependancies to pip requirements.txt.",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/commit-analyzer": "12.0.0",
+    "@semantic-release/commit-analyzer": "13.0.0",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "10.0.3",
