@@ -9,13 +9,13 @@ exclude: >
   )
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v5.0.0
+  rev: v6.0.0
   hooks:
   - id: trailing-whitespace
   - id: end-of-file-fixer
   - id: check-yaml
 - repo: https://github.com/PyCQA/autoflake
-  rev: v2.3.1
+  rev: v2.4.0
   hooks:
   - id: autoflake
     exclude: &fixtures test/
@@ -26,22 +26,22 @@ repos:
     - --remove-duplicate-keys
     - --remove-unused-variables
 - repo: https://github.com/asottile/pyupgrade
-  rev: v3.19.1
+  rev: v3.21.2
   hooks:
   - id: pyupgrade
     args: [--py36-plus]
 - repo: https://github.com/PyCQA/isort
-  rev: 5.13.2
+  rev: 9.0.1
   hooks:
   - id: isort
     exclude: docs*
     additional_dependencies: [toml]
-- repo: https://github.com/psf/black
-  rev: 24.10.0
+- repo: https://github.com/psf/black-pre-commit-mirror
+  rev: 26.5.1
   hooks:
   - id: black
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v2.14.0
+  rev: v2.16.0
   hooks:
   - id: pretty-format-ini
     args: [--autofix]
